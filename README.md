@@ -4,6 +4,12 @@
 
 Welcome once more to Job4U, the niche platform aimed at changing the way IT experts and tech firms, interact. The aim is to ensure that the best IT professionals and creative employers are able to meet, and easily do so in order to drive and support growth within the tech space.
 
+## 3D Model
+
+You can view the 3D model used in this project here:
+https://p3d.in/q90TA"
+(Created using Photoshop and Blender)
+
 ## Features
 
 - Employer and User Registration
