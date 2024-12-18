@@ -20,6 +20,12 @@ Welcome once more to Job4U, the niche platform aimed at changing the way IT expe
 ## Authors
 
 - [@ruseki](https://github.com/ruseki)
+- [@Heizeruu](https://github.com/Heizeruu)
+- [@Kier12345](https://github.com/Kier12345)
+- [@Murpphh](https://github.com/Murpphh)
+
+## Acknowledgement
+- [@frankiesochan](https://github.com/frankiesochan)
 
 &nbsp;
 
