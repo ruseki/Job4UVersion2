@@ -97,5 +97,5 @@ If you have any insights or feedback, please reach out to us at rioasisland@gmai
 
 ## License
 
-This project is licensed under the **GPL License**. See the [LICENSE](https://www.gnu.org/licenses/gpl-3.0.txt) file for details.
+This project is licensed under the **Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License**. See the [LICENSE](https://creativecommons.org/licenses/by-nc-nd/4.0/) file for details.
 
