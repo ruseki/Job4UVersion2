@@ -56,7 +56,7 @@ git clone https://github.com/ruseki/JOB4U_VERSION2.git
 ```
 
 ## Environment Variables
-To run this project, you need to have an `.env` file in both hotdog-backend and buns-frontend file
+To run this project, you need to have an `.env` file in both hotdog-backend and buns-frontend root directory.
 
 hotdog-backend
 `MONGODB_URI`
