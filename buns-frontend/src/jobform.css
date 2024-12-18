@@ -1,0 +1,212 @@
+.form-container {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 10px;
+  width: 700px;
+  background-color: transparent;
+  color: #fff;
+  backdrop-filter: blur(50px);
+  transition: transform 0.3s ease;
+  outline: 2px solid #ffffff;
+  backdrop-filter: blur(150px);
+  max-height: calc(100vh - 240px); /* Adjust based on your layout */
+  overflow: auto;
+}
+
+.form-container1{
+  background: rgba(255, 255, 255, 0.9);
+  padding: 10px;
+  border-radius: 10px;
+  width: 400px;
+  background-color: transparent;
+  color: #fff;
+  backdrop-filter: blur(50px);
+  transition: transform 0.3s ease;
+  outline: 2px solid #ffffff;
+  backdrop-filter: blur(150px);
+
+}
+.optional-input {
+  margin: auto;
+}
+
+
+.job-form {
+  display: grid;
+}
+
+
+.form-container::-webkit-scrollbar {
+  width: 9px;
+}
+
+.form-container::-webkit-scrollbar-track {
+  background: #fff;
+  border-radius: 10px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.form-container::-webkit-scrollbar-thumb {
+  background: #e4e4e4;
+  border-radius: 10px;
+}
+
+.form-container::-webkit-scrollbar-thumb:hover {
+  background: #d6d6d6;
+}
+
+.form-title {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 2em;
+  color: #FFf;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-right: 120px;
+}
+
+
+form.job-form .input-group {
+  margin-bottom: 20px;
+  position: relative;
+  display: inline;
+}
+
+form.job-form .input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form.job-form .input-group input,
+form.job-form .input-group textarea {
+  width: 100%;
+  padding: 10px 0; 
+  border: none; 
+  border-bottom: 2px solid #ccc; 
+  font-size: 1em;
+  outline: none; 
+  transition: border-color 0.3s ease; 
+  background-color: transparent;
+  color: #fff;
+  border-radius: 0%;
+}
+
+form.job-form .input-group input::placeholder,
+form.job-form .input-group textarea::placeholder {
+  color: #ffff; 
+}
+
+form.job-form .input-group input:focus,
+form.job-form .input-group textarea:focus {
+  border-color: #d437f3;
+}
+
+form.job-form .skills-container {
+  display: grid;
+  gap: 20px; 
+  max-height: 250px;
+  max-width: 100%; 
+  box-sizing: border-box; 
+  padding: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+.button-group {
+  display: flex;
+  justify-content: space-between; 
+  gap: 10px; 
+}
+
+
+form.job-form .skill-button {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  color:  #474747;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 4px;
+  width: 110px;
+}
+
+form.job-form .skill-button:hover {
+  background-color: #f0f0f0;
+}
+
+form.job-form .skill-button.selected {
+  background-color: #6a0dad;
+  color: #ffffff;
+  border-color: #6a0dad;
+}
+
+form.job-form .button-group-vertical {
+  display: flex;
+  flex-direction: column; 
+  gap: 10px;
+}
+
+form.job-form .salary-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+form.job-form .salary-container input {
+  width: 48%;
+}
+
+
+button {
+  /*padding: 10px 10px;    temporarily made this a comment, rename all the buttons className="job-form-buttons" so it wont meddle with other css*/
+  border-radius: 60px;
+  background-color: #e6eace;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #474747;
+  box-shadow: none;
+  width: 50%;
+  align-items: center;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+.verifyemailbackbutton {
+  /*padding: 10px 10px;    temporarily made this a comment, rename all the buttons className="job-form-buttons" so it wont meddle with other css*/
+  border-radius: 60px;
+  background-color: #e6eace;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #474747;
+  box-shadow: none;
+  width: 50%;
+  align-items: center;
+  padding: 10px 20px;
+  font-weight: bold;
+  margin-left: 100px;
+}
+
+.back_button, .next_button {
+  font-weight: bold;
+  background-color: #e6eace;
+  color: #474747;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background-color: #f3f3c4;
+  color: #899499;
+}
+
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.875rem;
+  margin-top: 5px;
+}

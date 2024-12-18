@@ -1,0 +1,289 @@
+/* src/universal.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(150px);
+} 
+
+.Login_Job4ULogo {
+    width: 150px; 
+    height: 150px; 
+    
+    margin-top: 30px;
+    background-image: url('./../public/hero/JOBv2.png'); /*  logo  */
+    background-size: cover;
+    background-position: center;
+}
+
+/* ... rest of your CSS ... */
+
+.login-form {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;  /* Full width on smaller screens */
+    max-width: 400px; /* Limit the width to 400px */
+    background-color: transparent;
+    color: #fff;
+    backdrop-filter: blur(150px);
+    transition: transform 0.3s ease;
+    outline: 2px solid #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 70vh;
+}
+
+.login-title {
+    font-size: 2.5em;
+    color: #ffff;
+    margin-bottom: 50px;
+    text-align: center;
+    z-index: 1; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-top: 20px; /* Adjusted to give space for the logo */
+}
+
+/* ... rest of your CSS ... */
+
+
+.input-group {
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    width: 100%;
+    border: none; 
+    border-bottom: 3px solid #fff; 
+    font-size: 1em;
+    outline: none; 
+    /*transition: border-color 0.3s ease; */
+    background-color: transparent;
+    color: #000000;
+    text-align: center;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.input-group input:focus {
+    /*border-bottom: 2px solid #d437f3; */
+    
+}
+
+.input-group label {
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    color: #fff;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+.input-group input::placeholder {
+    color: #fff;
+}
+
+.label_email {
+    margin-top: 15px;
+    letter-spacing: 1px;
+    font-size: 17px;
+    color: #fff;
+}
+
+.label_password {
+    margin-top: 25px;
+    letter-spacing: 1px;
+    font-size: 17px;
+    color: #fff;
+}
+
+.login-form .input-group input[type="checkbox"] {
+    margin: 0; 
+    padding: 0; 
+    display: inline-block;
+    width: auto; 
+    height: auto;
+    margin-right: 5px;
+}
+
+.ForgotPassword {
+    margin-top: 4px;
+    margin-right: 5px;
+    text-decoration: underline;
+    color: #fff;
+    font-size: 0.9em;
+    display: flex;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+
+button {
+    background-color: #d437f3;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    margin: auto;
+}
+
+button:hover {
+    background-color: #1c82e0;
+    color: #adb19c;
+}
+
+.Sign-In-Button {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 80px;
+    background-color: #f0f3c6;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #474747;
+    font-weight: bold;
+    background-color: #e6eace;
+    margin-left: 25%;
+    box-shadow: none;
+    width: 48%;
+}
+
+.Sign-In-Button:hover {
+    background-color: #e6eace;
+    color:#474747;
+    font-weight: bold;
+}
+
+/* Register Link */
+.register-link {
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+.register-link a {
+    color: #fff;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+.text_donthaveanaccount {
+    text-align: center;
+    color: #fff;
+}
+
+/* Mobile (max-width 600px) */
+@media (max-width: 600px) {
+    .login-form {
+        width: 100%;
+        padding: 20px;
+    }
+    .login-title {
+        font-size: 1.8em;
+    }
+    .input-group input {
+        font-size: 0.9em;
+        padding: 8px;
+    }
+    button {
+        font-size: 1em;
+    }
+    .Sign-In-Button {
+        width: 100%;
+        margin-left: 0;
+    }
+    .login-container{
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        box-sizing: border-box;
+        display: contents;
+    }
+    
+}
+
+
+/* Mobile (max-width 600px) */
+@media (max-width: 600px) {
+    .login-form {
+        width: 100%;
+        padding: 20px;
+    }
+    .login-title {
+        font-size: 1.8em;
+    }
+    .input-group input {
+        font-size: 0.9em;
+        padding: 8px;
+    }
+    button {
+        font-size: 1em;
+    }
+    .Sign-In-Button {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+/* Tablet (max-width 768px) */
+@media (max-width: 768px) {
+    .login-form {
+        width: 80%;
+        padding: 20px;
+    }
+    .login-title {
+        font-size: 2.2em;
+    }
+    .input-group input {
+        font-size: 1em;
+        padding: 9px;
+    }
+    button {
+        font-size: 1.05em;
+    }
+    .login-container{
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        box-sizing: border-box;
+        display: contents;
+    }
+}
+
+/* PC / Laptop (min-width 769px) */
+@media (min-width: 769px) {
+    .login-form {
+        width: 400px;
+    }
+    .login-title {
+        font-size: 2.5em;
+    }
+    .input-group input {
+        font-size: 1.1em;
+    }
+    button {
+        font-size: 1.1em;
+    }
+}

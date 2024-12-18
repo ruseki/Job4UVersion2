@@ -1,0 +1,629 @@
+body {
+    background: linear-gradient(135deg, #6a0dad, #ff69b4);
+    color: #FFCE1B;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    /*background-image: url('./hero/background.jpg');*/
+}
+
+h1 { /*login*/
+    color: #ffff;
+    margin: 0 auto;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    filter: blur(.6px);
+}
+
+/*register*/
+h2 {
+    color: #ffff;
+    font-size: 33px;
+    text-align: center;
+    text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2);
+    filter: blur(.6px);
+    margin-left: 130px;
+}
+/*skills*/
+h3 {
+    color: #ffff;
+    text-align: center;
+    font-size: 33px;
+    text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2);
+    margin: auto;
+    filter: blur(0.6px);
+}
+
+/*health-condition*/
+h4 { 
+    color: #ffff;
+    font-size: 33px;
+    text-align: center;
+    text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2);
+    filter: blur(.6px);
+}
+
+h5 {
+    color: #ffff;
+}
+
+h6 {
+    color: #ffff;
+}
+
+p {
+    color: #000000;
+    line-height: 1.6;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #fdfdfd; /* hindi pa naaayos /skills-questioons, wala ding back button, asan na yun, same dapat sila ng placement ni /health-conditions */
+}
+
+button {
+    background-color: #ffffff;
+    border: none;
+    color: #6a0dad;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    box-shadow: 1px 3px 4px #747474;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: #e6eace;
+    color: #ffffff;
+}
+
+button:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 700px;
+    height: 500px;
+    text-align: left;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    background-color: transparent;
+    backdrop-filter: blur(50px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    overflow: hidden;
+    outline: 2px solid #ffffff;
+    overflow-y: auto; /* Add vertical scrollbar */
+    overflow-x: hidden; /* Prevent horizontal scrollbar */
+    backdrop-filter: blur(150px);
+}
+/* Custom Webkit scrollbar */
+.container::-webkit-scrollbar {
+    width: 8px; /* Slim scrollbar */
+    height: 8px; /* Slim horizontal scrollbar if needed */
+}
+
+/* Custom thumb (the draggable part) */
+.container::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.096);
+    border-radius: 10px; 
+    transition: background-color 0.3s ease; 
+}
+
+/* Hover effect for thumb */
+.container::-webkit-scrollbar-thumb:hover {
+    background-color: transparent; 
+}
+
+
+.container::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.1); 
+    border-radius: 10px; 
+}
+
+
+.container::-webkit-scrollbar-horizontal {
+    height: 8px;
+}
+
+.container::-webkit-scrollbar-thumb:horizontal {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.container::-webkit-scrollbar-track:horizontal {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.header, .footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    text-align: center;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.gradient-text {
+    background: linear-gradient(135deg, #6a0dad, #ff69b4);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.input-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+.input-icon {
+    position: absolute;
+    left: 10px;
+    color: #ffffff;
+}
+
+.verify-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 10px;
+    width: 400px;
+    background-color: transparent;
+    color: #fff;
+    backdrop-filter: blur(50px);
+    transition: transform 0.3s ease;
+    outline: 2px solid #ffffff;
+    backdrop-filter: blur(150px);
+    height: 250;
+}
+
+
+
+.verify-form {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+}
+
+.verify-title {
+    margin-left: 0; /* Removed the large left margin */
+    color: #ffff;
+    text-align: center;
+}
+
+.verify-form input {
+    padding: 0.75rem 0.75rem 0.75rem 2.5rem;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background: #e6eace;
+    font-size: 1rem;
+    color: #333;
+}
+
+.verify-form button {
+    background-color: #e6eace;
+    border: none;
+    color: #899499;
+    padding: 0.75rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.verify-form button:hover {
+    transform: scale(1.05);
+    color: #899499;
+}
+
+.verify-form button:active {
+    background-color: #6a0dad;
+    color: #ffffff;
+}
+
+.skills-questions-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.skill-item {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.skill-item.selected {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
+
+.skill-item:hover {
+    background-color: #e0e0e0;
+}
+
+.actions {
+    margin-top: 20px;
+    display: flex;
+}
+
+button:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.health-question-container {
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    background: transparent;
+    backdrop-filter: blur(150px);
+    transition: transform 0.3s ease;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    position: relative;
+}
+
+.health-question-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.universal-button {
+    padding: 20px 5px;
+    border: 1px solid #ccc;
+    border-radius: 80px;
+    background-color: #f0f3c6;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #474747;
+    text-align: center; /* added*/
+    box-sizing: border-box; /*added*/
+    display: inline-block;  /*added*/
+    margin: 5px 1%; /*added*/
+    background-color: #e6eace;
+    box-shadow: none;
+    width: 48%;
+    font-weight: bold;
+    align-self: center;
+}
+
+.skills-universal-button {
+    padding: 20px 5px;
+    border: 1px solid #ccc;
+    border-radius: 80px;
+    background-color: #f0f3c6;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #474747;
+    text-align: center; /* added*/
+    box-sizing: border-box; /*added*/
+    display: inline-block;  /*added*/
+    margin: 5px 0px; /*added*/
+    background-color: #e6eace;
+    box-shadow: none;
+    width: 48%;
+    font-weight: bold;
+    align-self: center;
+    margin-left: 170px;
+}
+
+
+.universal-button:hover {
+    transform: scale(1.05);
+   background-color: #e6eace;
+    color: #474747;
+}
+
+.universal-button:active {
+    background-color: #ffffff;
+    color: #ffffff;
+}
+
+.universal-button:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.universal-container {
+    text-align: center;
+    padding: 20px;
+}
+
+
+.universal-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 20px;
+    padding: 50px;
+}
+
+.universal-item {
+    padding: 15px 25px;
+    border-radius: 80px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #474747;
+    background-color: #ffff;
+    box-shadow: none;
+    text-shadow: none;
+    width: 48%;
+    height: 90px;
+}
+
+.universal-item.selected {
+    background-color: #6a0dad;
+    color: #ffffff;
+    border-color: #6a0dad;  
+}
+
+.universal-item:hover {
+    transform: scale(1.05);
+    font-weight: bold;
+    background-color: #ffff;
+}
+
+.reset-password-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f7f7f7;
+    padding: 20px;
+}
+
+.reset-password-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.reset-password-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+}
+
+.password-input, .reset-button {
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.reset-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.reset-button:hover {
+    background-color: #0056b3;
+}
+
+.forgot-password-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;  
+    padding: 20px;
+
+    width: 100%;
+    max-width: 350px; 
+    margin: 20px auto; 
+
+    border: 2px solid rgba(255, 255, 255, 0.3); 
+    border-radius: 10px; 
+    box-sizing: border-box;
+
+    backdrop-filter: blur(10px);
+}
+
+
+.forgot-password-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+
+}
+
+.forgot-password-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    background-color: transparent; 
+    
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.email-input, .send-reset-button {
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    color: #ffff;
+    white-space: nowrap;
+}
+
+.email-input {
+    width: 93.5%;
+    background-color: transparent;
+    box-shadow: none;
+    padding: 10px 0;
+    font-size: 1rem;
+    border:none;
+    outline:none; 
+    color: #fff;
+    transition: border-color 0.3s ease;
+    border-bottom: 3px solid #ffffff;
+    text-align: center;
+}
+.send-reset-button {
+    padding: 20px 20px;
+    border: 1px solid #ccc;
+    border-radius: 80px;
+    background-color: #f0f3c6;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #474747;
+    font-weight: bold;
+    background-color: #e6eace;
+    margin-left: 80%;
+    box-shadow: none;
+    width: 43%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    
+}
+
+.send-reset-button:hover {
+    background-color: #e6eace;
+    color:#474747;
+    font-weight: bold; 
+}
+
+.back-button {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 80px;
+    background-color: #f0f3c6;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #474747;
+    font-weight: bold;
+    background-color: #e6eace;
+    margin-left: 5%;
+    box-shadow: none;
+    width: 43%;
+}
+.back-button:hover {
+    background-color: #e6eace;
+    color:#474747;
+    font-weight: bold; 
+}
+
+.resend-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.resend-link {
+    text-decoration: underline;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.success-message {
+    color: green;
+    font-size: 0.9rem;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.popup-error {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    background-color: white;
+    border: 2px solid #f00;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+
+@media (max-width: 768px) {
+    .universal {
+        font-size: 2em;
+    }
+
+    button {
+        font-size: 1em;
+    }
+    .container {
+        padding: 10px; 
+    }
+
+}
+@media (max-width: 480px) {
+    .container {
+        padding: 5px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 750px;
+        margin: auto;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        max-width: 970px;
+    }
+}

@@ -1,0 +1,290 @@
+/* Styling for Register Page */
+.body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #a1c4fd, #c2e9fb); /* Gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 10px;
+}
+
+.register-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;  
+    max-width: 400px; 
+    background-color: transparent;
+    color: #fff;
+    backdrop-filter: blur(150px);
+    transition: transform 0.3s ease;
+    outline: 2px solid #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 90vh;
+}
+
+.register-container::-webkit-scrollbar {
+    width: 8px; 
+}
+
+.register-container::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0); 
+    border-radius: 10px;
+}
+
+.register-container::-webkit-scrollbar-thumb {
+    background: rgba(5, 5, 5, 0.123); 
+    border-radius: 10px;
+}
+
+.h2 .register-title {
+    margin-left: 0; 
+    color: #ffff;
+    text-align: center; 
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.input-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    color: #333;
+    margin-left: 90%;
+}
+
+button {
+    background-color: #ffcc00;
+    color: #ffff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e6eace;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.company {
+    text-decoration: underline;
+    text-align: center;
+}
+
+.register-links {
+    margin-top: 1rem;
+    color: #ffff;
+}
+
+.register-links a {
+    color: #ffff;
+    margin-top: 10px;
+    display: block;
+    transition: color 0.3s ease;
+    font-weight: bold;
+}
+
+.register-links a:hover {
+    text-decoration: underline;
+    color: #e6eace;
+}
+
+.register-links p {
+    margin: 0.5rem 0;
+    color: #fff;
+}
+
+.reglink {
+    font-weight: bold;
+}
+
+.inline-text {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.inline-text a {
+    margin-top: -0.5px;
+}
+
+.sign-up-button {
+    padding: 10px 20px;
+    border-radius: 80px;
+    background-color: #f0f3c6;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #474747;
+    font-weight: bold;
+    background-color: #e6eace;
+    backdrop-filter: blur;
+    width: 48%;
+    box-shadow: none;
+    margin-left: 25%;
+}
+
+.sign-up-button:hover {
+    background-color: #e6eace;
+    color: #474747;
+    font-weight: bold;
+}
+
+/*pogi ni kierstan seigheart parel,*/
+                        
+
+.label_first-name {
+    margin-bottom: 1px; 
+    margin-left: 20px; 
+    color: #ffff;
+    text-align: center;
+}
+
+.label_middle-name {
+    margin-bottom: 1px;
+    color: #ffff;
+     margin-left: 20px;
+     text-align: center;
+}
+
+.label_last-name{
+    margin-bottom: 1px;
+    color: #ffff;    
+    margin-left: 20px;
+    text-align: center;
+}
+
+.label_email {
+    margin-bottom: 1px;
+    color: #ffff;
+    margin-left: 20px;
+    text-align: center;
+}
+
+.label_password {
+    margin-bottom: 1px;
+    margin-left: 20px;
+    color: #ffff;
+    text-align: center;
+}
+
+.label_confirm-password {
+    margin-bottom: 1px;
+    color: #ffff;
+    margin-left: 20px;
+    text-align: center;
+}
+
+/* Mobile (max-width 600px) */
+@media (max-width: 600px) {
+    .register-container {
+        padding: 15px;
+        width: 100%;
+        max-width: none; /* Remove max-width to use full screen width */
+    }
+
+    .register-title {
+        font-size: 1.8em;
+    }
+
+    .input-group input {
+        font-size: 0.9em;
+        padding: 8px;
+    }
+
+    button {
+        font-size: 1em;
+    }
+
+    .sign-up-button {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .body {
+        height: auto;  /* Ensure content is vertically centered on smaller screens */
+    }
+}
+
+/* Tablet (max-width 768px) */
+@media (max-width: 768px) {
+    .register-container {
+        padding: 20px;
+        width: 80%;
+    }
+
+    .register-title {
+        font-size: 2.2em;
+    }
+
+    .input-group input {
+        font-size: 1em;
+        padding: 9px;
+    }
+
+    button {
+        font-size: 1.05em;
+    }
+
+    .sign-up-button {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+/* PC / Laptop (min-width 769px) */
+@media (min-width: 769px) {
+    .register-container {
+        width: 400px;
+    }
+
+    .register-title {
+        font-size: 2.5em;
+    }
+
+    .input-group input {
+        font-size: 1.1em;
+    }
+
+    button {
+        font-size: 1.1em;
+    }
+
+    .sign-up-button {
+        width: 48%;
+        margin-left: 25%;
+    }
+}
